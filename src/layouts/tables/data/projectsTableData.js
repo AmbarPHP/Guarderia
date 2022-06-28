@@ -55,8 +55,8 @@ export default function data() {
 
   return {
     columns: [
-      { Header: "project", accessor: "project", width: "30%", align: "left" },
-      { Header: "budget", accessor: "budget", align: "left" },
+      { Header: "Grupo", accessor: "project", width: "30%", align: "left" },
+      { Header: "cantidad", accessor: "budget", align: "left" },
       { Header: "status", accessor: "status", align: "center" },
       { Header: "completion", accessor: "completion", align: "center" },
       { Header: "action", accessor: "action", align: "center" },
@@ -64,15 +64,15 @@ export default function data() {
 
     rows: [
       {
-        project: <Project image={LogoAsana} name="Asana" />,
+        project: <Project image={LogoAsana} name="Grupo 2A" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            $2,500
+            23
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            working
+            trabajando
           </MDTypography>
         ),
         completion: <Progress color="info" value={60} />,
@@ -83,15 +83,15 @@ export default function data() {
         ),
       },
       {
-        project: <Project image={logoGithub} name="Github" />,
+        project: <Project image={logoGithub} name="Grupo 3A" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            $5,000
+            21
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            done
+            Listo
           </MDTypography>
         ),
         completion: <Progress color="success" value={100} />,
@@ -102,15 +102,15 @@ export default function data() {
         ),
       },
       {
-        project: <Project image={logoAtlassian} name="Atlassian" />,
+        project: <Project image={logoAtlassian} name="Grupo 1A" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            $3,400
+            12
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            canceled
+            trabajando
           </MDTypography>
         ),
         completion: <Progress color="error" value={30} />,
@@ -121,15 +121,15 @@ export default function data() {
         ),
       },
       {
-        project: <Project image={logoSpotify} name="Spotify" />,
+        project: <Project image={logoSpotify} name="Grupo Maternal" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            $14,000
+            14
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            working
+            Trabajando
           </MDTypography>
         ),
         completion: <Progress color="info" value={80} />,
@@ -140,15 +140,15 @@ export default function data() {
         ),
       },
       {
-        project: <Project image={logoSlack} name="Slack" />,
+        project: <Project image={logoSlack} name="Grupo 3B" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            $1,000
+            10
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            canceled
+            Listo
           </MDTypography>
         ),
         completion: <Progress color="error" value={0} />,
@@ -159,15 +159,15 @@ export default function data() {
         ),
       },
       {
-        project: <Project image={logoInvesion} name="Invesion" />,
+        project: <Project image={logoInvesion} name="Maternal" />,
         budget: (
           <MDTypography component="a" href="#" variant="button" color="text" fontWeight="medium">
-            $2,300
+            23
           </MDTypography>
         ),
         status: (
           <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            done
+            Listo
           </MDTypography>
         ),
         completion: <Progress color="success" value={100} />,

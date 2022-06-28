@@ -16,6 +16,7 @@ Coded by www.creative-tim.com
 // @mui material components
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
+import { Button } from "@mui/material";
 
 // Material Dashboard 2 React components
 import MDBox from "components/MDBox";
@@ -38,6 +39,9 @@ function Tables() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
+      <Button>
+        Disabled Button
+      </Button>
       <MDBox pt={6} pb={3}>
         <Grid container spacing={6}>
           <Grid item xs={12}>
@@ -53,7 +57,7 @@ function Tables() {
                 coloredShadow="info"
               >
                 <MDTypography variant="h6" color="white">
-                  Authors Table
+                  Tabla de Maestros
                 </MDTypography>
               </MDBox>
               <MDBox pt={3}>
@@ -80,7 +84,7 @@ function Tables() {
                 coloredShadow="info"
               >
                 <MDTypography variant="h6" color="white">
-                  Projects Table
+                  Tabla de grupos
                 </MDTypography>
               </MDBox>
               <MDBox pt={3}>

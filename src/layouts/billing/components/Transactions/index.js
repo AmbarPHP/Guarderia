@@ -31,7 +31,7 @@ function Transactions() {
     <Card sx={{ height: "100%" }}>
       <MDBox display="flex" justifyContent="space-between" alignItems="center" pt={3} px={2}>
         <MDTypography variant="h6" fontWeight="medium" textTransform="capitalize">
-          Your Transaction&apos;s
+          Tus Transacciones
         </MDTypography>
         <MDBox display="flex" alignItems="flex-start">
           <MDBox color="text" mr={0.5} lineHeight={0}>
@@ -40,14 +40,14 @@ function Transactions() {
             </Icon>
           </MDBox>
           <MDTypography variant="button" color="text" fontWeight="regular">
-            23 - 30 March 2020
+            23 - 30 Marzo 2020
           </MDTypography>
         </MDBox>
       </MDBox>
       <MDBox pt={3} pb={2} px={2}>
         <MDBox mb={2}>
           <MDTypography variant="caption" color="text" fontWeight="bold" textTransform="uppercase">
-            newest
+            el mas nuevo
           </MDTypography>
         </MDBox>
         <MDBox
