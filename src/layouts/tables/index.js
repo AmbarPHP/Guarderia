@@ -27,19 +27,36 @@ import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
 import DataTable from "examples/Tables/DataTable";
+import NewTeacher from "./NewTeacher";
+import { useState } from "react";
 
 // Data
-import authorsTableData from "layouts/tables/data/authorsTableData";
+//import authorsTableData from "layouts/tables/data/authorsTableData";
+import teachersTableData from "./data/teachersTableData"
 import projectsTableData from "layouts/tables/data/projectsTableData";
+import TablaMaestroFilter from "./TablaMaestroFilter";
 
 function Tables() {
-  const { columns, rows } = authorsTableData();
+  const { columns, rows } = teachersTableData();
   const { columns: pColumns, rows: pRows } = projectsTableData();
+
+  const [filterName, setFilterName]=useState('2000');
+
+  const addTeacherDataHandler= teacher=>{
+    console.log("in the index of tables");
+    console.log(teacher);
+  }
+
+  const filterChangeHandler=selecttedName=>{
+    console.log("filter");
+    console.log(selecttedName);
+  }
 
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <Button variant="contained" color="white">Agregar</Button>
+     
+      <NewTeacher onAddTeacher={addTeacherDataHandler} ></NewTeacher>
       <MDBox pt={6} pb={3}>
         <Grid container spacing={6}>
           <Grid item xs={12}>
@@ -53,12 +70,21 @@ function Tables() {
                 bgColor="info"
                 borderRadius="lg"
                 coloredShadow="info"
+
+                display="flex" 
+                alignItems="center"
+                justifyContent="between"
+                
               >
                 <MDTypography variant="h6" color="white">
                   Tabla de Maestros
                 </MDTypography>
+                <TablaMaestroFilter selected={filterName} onChangeFilter={filterChangeHandler}/>
+             
               </MDBox>
               <MDBox pt={3}>
+               
+                
                 <DataTable
                   table={{ columns, rows }}
                   isSorted={false}
@@ -98,7 +124,7 @@ function Tables() {
           </Grid>
         </Grid>
       </MDBox>
-      <Footer />
+
     </DashboardLayout>
   );
 }

@@ -168,7 +168,7 @@ function RTL() {
           </Grid>
         </MDBox>
       </MDBox>
-      <Footer />
+   
     </DashboardLayout>
   );
 }
